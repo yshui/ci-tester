@@ -11,6 +11,7 @@
  */
 
 #include <fnmatch.h>
+
 #include <ctype.h>
 
 // libpcre
@@ -104,10 +105,8 @@ struct _c2_l {
   bool tgt_onframe;
   int index;
   enum {
-    C2_L_PUNDEFINED,
-    C2_L_PID,
-    C2_L_PX,
-    C2_L_PY,
+    C2_L_PUNDEFINED,C2_L_PID,
+    C2_L_PX,   C2_L_PY,
     C2_L_PX2,
     C2_L_PY2,
     C2_L_PWIDTH,
