@@ -9,6 +9,6 @@ jobs:
       - run: echo $TERM
       - run: sudo apt-get update
       - run: sudo apt-get install git-all colordiff
-      - run: git format-patch --stdout -1 | colordiff
-      - run: git format-patch --stdout -1 | TERM=linux colordiff
+      - run: cd "$GITHUB_WORKSPACE"; git format-patch --stdout -1 | colordiff
+      - run: cd "$GITHUB_WORKSPACE"; git format-patch --stdout -1 | TERM=linux colordiff
 
