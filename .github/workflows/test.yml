@@ -7,3 +7,6 @@ jobs:
 
     steps:
       - run: echo $TERM
+      - run: git format-patch --stdout -1 | colordiff
+      - run: git format-patch --stdout -1 | TERM=linux colordiff
+
