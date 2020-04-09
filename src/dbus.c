@@ -16,8 +16,7 @@
 
 #include "dbus.h"
 
-static DBusHandlerResult
-cdbus_process(DBusConnection *conn, DBusMessage *m, void *);
+static DBusHandlerResult cdbus_process(DBusConnection *conn, DBusMessage *m, void *);
 
 static dbus_bool_t
 cdbus_callback_add_timeout(DBusTimeout *timeout, void *data);
